@@ -1,8 +1,8 @@
 from main import return_backwards_string, get_mode
-import unitest
+import unittest
 import os
 
-class TestMain(unitest.TestCase):
+class TestMain(unittest.TestCase):
     def test_return_backwards_string(self):
         random_string = "akshat"
         random_string_reversed = "tahska"
@@ -13,4 +13,4 @@ class TestMain(unitest.TestCase):
         self.assertEqual(os.environ.get("MODE"), get_mode())
 
 if __name__ == '__main__':
-    unitest.main()
+    unittest.main()
